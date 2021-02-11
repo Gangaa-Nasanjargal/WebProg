@@ -1,0 +1,25 @@
+.box {
+    display: flex;
+}
+.one {
+    width: 100px;
+    height: 150px;
+    background-color: #eeeff2;
+    border-left: 10px dotted #d0d0ff;
+    margin-inline-end: 10px;
+}
+.one:hover{
+    cursor: pointer;
+    color: yellow;
+    background-color: goldenrod;
+}
+.one:last-of-type {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+h1 {
+    font-family: tahoma;
+    font-size: 40px;
+    margin-block-start: 10px;
+}
