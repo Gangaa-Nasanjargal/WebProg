@@ -1,0 +1,170 @@
+body{
+    background-color: #0d1b2a;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+html{
+    font-size: 62.5%;
+  }
+.month1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.month2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.month3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.jan, .may ,.sep {
+    background-color: #1b263b;
+    color: white;
+    margin-inline-end: 1em;
+}
+.feb,  .jun ,.oct {
+    background-color: #415a77;
+    color: white;
+    margin-inline-end: 1em;
+}
+.mar ,.jul, .nov {
+    background-color: #778da9;
+    color: white;
+    margin-inline-end: 1em;
+}
+.apr, .aug, .dec {
+    background-color: #a9bcd0;
+    color: white;
+    margin-inline-end: 1em;
+}
+h1.title {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-bottom: 16px;
+}
+.notes {
+  display: flex;
+  justify-content: center;
+  margin-block-start: 5em;
+  margin-block-end: 5em;
+}
+.one {
+  color: white;
+  margin-inline-start: 30px;
+}
+.two {
+  display: flex;
+}
+.two h1 {
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  color: #ffbe0b;
+}
+.two p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0.3rem 0.5rem rgb(0 0 0 / 50%);
+  color: #778da9;
+}
+.two p:first-of-type{
+  margin-inline-start: 25px;
+  margin-inline-end: 9px;
+  color: #e0e1dd;
+}
+
+.weekdays{
+    width: 25em;
+    height: 5rem;
+    padding: 0 .4rem;
+    display: flex;
+    align-items: center;
+  }
+  .date h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-bottom: 0;
+}
+  .weekdays div{
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    width: calc(44.2rem/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.5);
+  }
+  .days1, .days2, .days3, .days5, .days6, .days7, .days8, .days10, .days11{
+    margin-bottom: 3em;
+}
+.days0 div:hover:not(.today), .days1 div:hover:not(.today), .days2 div:hover:not(.today), .days3 div:hover:not(.today), .days4 div:hover:not(.today), .days5 div:hover:not(.today), .days6 div:hover:not(.today), .days7 div:hover:not(.today), .days8 div:hover:not(.today), .days9 div:hover:not(.today), .days10 div:hover:not(.today), .days11 div:hover:not(.today){
+  background-color: #262626;
+  cursor: pointer;
+}
+.today{
+  background-color: #167e56;
+}
+.days0 div:first-child, .days9 div:first-child{
+   margin-inline-start: 178px;
+}
+.days1 div:first-child, .days2 div:first-child, .days10 div:first-child{
+  margin-inline-start: 35px;
+}
+.days3 div:first-child, .days6 div:first-child{
+  margin-inline-start: 142px;
+}
+.days4 div:first-child{
+  margin-inline-start: 214px;
+}
+.days5 div:first-child{
+  margin-inline-start: 71px;
+}
+.days8 div:first-child, .days11 div:first-child{
+  margin-inline-start: 106px;
+}
+  .days0, .days1, .days2, .days3, .days4, .days5, .days6, .days7, .days8, .days9, .days10, .days11{
+    width: 25em;
+    display: flex;
+    flex-wrap: wrap;
+    padding: .2rem;
+  }
+  .days0 div, .days1 div, .days2 div, .days3 div, .days4 div, .days5 div, .days6 div, .days7 div, .days8 div, .days9 div, .days10 div, .days11 div{
+    font-size: 1.1rem;
+    width: calc(25rem/7);
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.5);
+    transition: background-color .2s;
+  }
+.days0 div:nth-of-type(1), .days1 div:nth-of-type(1), .days1 div:nth-of-type(3), .days1 div:nth-of-type(17),
+.days2 div:nth-of-type(2), .days2 div:nth-of-type(6), .days2 div:nth-of-type(8),
+.days3 div:nth-of-type(1), .days4 div:nth-of-type(10),.days5 div:nth-of-type(6),
+.days6 div:nth-of-type(4), .days7 div:nth-of-type(1), .days7 div:nth-of-type(25),
+.days8 div:nth-of-type(1), .days9 div:nth-of-type(13),.days10 div:nth-of-type(2),
+.days11 div:nth-of-type(20),.days11 div:nth-of-type(30){
+  background-color:#ffbe0b;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+
