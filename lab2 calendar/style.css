@@ -166,5 +166,8 @@ h1.title {
   border-radius: 50%;
   opacity: 0.9;
 }
+.days0 , .days9{
+    margin-block-end: 30px;
+}
 
 
