@@ -32,7 +32,11 @@ h5 {
   margin-top: 20px;
   width: 100%;
 }
-
+.pro-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 80px;
+}
 .btn:hover {
   opacity: 0.8;
 }
@@ -43,6 +47,7 @@ h5 {
 }
 .item {
   width: 30%;
+  margin-block-end: 7px;
 }
 .home-card {
   max-width: 500px;
@@ -71,5 +76,12 @@ button.logout {
 @media only screen and (max-width: 800px) {
   .image {
     display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .pro-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 80px;
   }
 }

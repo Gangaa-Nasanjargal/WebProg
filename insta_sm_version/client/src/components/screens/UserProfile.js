@@ -7,6 +7,7 @@ const Profile = ()=>{
     const [UserProfile,setProfile] = useState(null)
     const {state, dispatch} = useContext(UserContext)
     const {userid} = useParams()
+    //const [showfollow, setShowFollow] = useState(state?!state.followers.includes(userid):true)
     useEffect(()=>{
         fetch(`/user/${userid}`,{
             headers:{
@@ -14,7 +15,7 @@ const Profile = ()=>{
             }
         }).then(res=>res.json())
         .then(result=>{
-            console.log(result)
+            //console.log(result)
             setProfile(result)
         })
     },[])
@@ -31,7 +32,7 @@ const Profile = ()=>{
             }}>
                 <div>
                     <img style={{width:"160px", height:"160px", borderRadius:"80px"}}  
-                    src="https://i.pinimg.com/564x/6d/85/6f/6d856fd55f5ebde57561290bfbb43b56.jpg"
+                    src={UserProfile.user.pic}
                     />
                 </div>
                 <div>
@@ -39,8 +40,8 @@ const Profile = ()=>{
                     <h5>{UserProfile.user.email}</h5>
                     <div style={{display:"flex", justifyContent:"space-between", width:"108%"}}>
                         <h6>{UserProfile.posts.length} posts</h6>
-                        <h6>120 followers</h6>
-                        <h6>2 following</h6>
+                        {/* <h6>120 followers</h6>
+                        <h6>2 following</h6> */}
                     </div>
                 </div>
             </div>

@@ -25,16 +25,14 @@ const Profile = ()=>{
                 borderBottom: "1px solid grey"
             }}>
                 <div>
-                    <img style={{width:"160px", height:"160px", borderRadius:"80px"}}  
-                    src="https://i.pinimg.com/564x/6d/85/6f/6d856fd55f5ebde57561290bfbb43b56.jpg"
-                    />
+                    <img className="pro-pic" src={state?state.pic:"loading"}/>
                 </div>
                 <div>
                     <h4>{state?state.name:"loading"}</h4>
                     <div style={{display:"flex", justifyContent:"space-between", width:"108%"}}>
-                        <h6>40 posts</h6>
-                        <h6>120 followers</h6>
-                        <h6>2 following</h6>
+                    <h6>{mypics.length} posts</h6>
+                        {/* <h6>120 followers</h6>
+                        <h6>2 following</h6> */}
                     </div>
                 </div>
             </div>
